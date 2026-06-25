@@ -1,5 +1,5 @@
 # Task 1: Understanding the Dataset
-Dataset Overview
+## Dataset Overview
 
 This dataset contains monthly business performance information collected from multiple retail stores. The objective of the analysis is to identify the factors that influence monthly profit using regression analysis. The dataset includes both numerical and categorical variables representing sales performance, customer behavior, operational efficiency, marketing activities, and store characteristics.
 
