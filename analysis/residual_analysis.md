@@ -74,6 +74,7 @@ These observations represent cases where the regression model overestimated mont
 The residual analysis shows that the regression model produces both positive and negative prediction errors across the observations. The largest positive residual is 138341.57, indicating that the model underestimated monthly sales for that observation. The largest negative residual is -135631.05, indicating that the model overestimated monthly sales for another observation.
 
 The presence of both positive and negative residuals suggests that the model does not consistently over-predict or under-predict monthly sales. The observed prediction errors indicate that, although the model explains approximately 79.24% of the variation in monthly sales (R-squared = 0.7924), certain observations may be influenced by additional business factors that are not included in the current regression model.
+
 ---
 
 ### 6. Discussion of Under-Prediction and Over-Prediction
@@ -83,6 +84,7 @@ The model exhibits both under-prediction and over-prediction across different ob
 The largest positive residual was 138341.57, indicating that the actual monthly sales exceeded the predicted sales by a substantial margin. Conversely, the largest negative residual was -135631.05, indicating that the predicted monthly sales were significantly higher than the actual sales.
 
 Although a small number of observations show relatively large prediction errors, the overall model remains reliable. The multiple regression model explains approximately 79.24% of the variation in monthly sales (R-squared = 0.7924), indicating strong predictive performance. The presence of both positive and negative residuals indicates that the model produced both under-predictions and over-predictions across the dataset. Based on the residual analysis performed, there is no clear evidence that the model consistently over-predicts or under-predicts monthly sales.
+
 ---
 
 ## Conclusion
