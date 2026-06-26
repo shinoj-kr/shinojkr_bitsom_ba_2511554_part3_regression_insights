@@ -6,7 +6,7 @@
 
 The objective of this analysis is to evaluate the performance of the multiple regression model by comparing the predicted monthly sales with the actual monthly sales. Residual analysis helps assess the accuracy of the model and identify observations where the prediction error is relatively high.
 
-Note: The complete list of predicted monthly sales and residual values for all 320 observations is available in the Predictions_Residuals worksheet of analysis/regression_workbook.xlsx. This document summarizes the residual analysis and key findings. f the model 
+The complete list of predicted monthly sales and residual values for all 320 observations is available in the Predictions_Residuals worksheet of analysis/regression_workbook.xlsx. This document summarizes the residual analysis and key findings. 
 ---
 
 ### 2. Prediction Method
