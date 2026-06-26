@@ -70,11 +70,9 @@ These observations represent cases where the regression model overestimated mont
 
 ### 5. Interpretation of Residuals
 
-The residual analysis indicates that the regression model generally provides reliable predictions for monthly sales. Most observations have residual values close to zero, indicating good agreement between the predicted and actual values.
+The residual analysis shows that the regression model produces both positive and negative prediction errors across the observations. The largest positive residual is 138341.57, indicating that the model underestimated monthly sales for that observation. The largest negative residual is -135631.05, indicating that the model overestimated monthly sales for another observation.
 
-Some observations exhibit relatively large positive or negative residuals, indicating that the model was unable to fully capture the factors influencing monthly sales for those stores. These prediction errors may be due to business factors that are not included in the current regression model.
-
-Overall, the distribution of positive and negative residuals suggests that the model does not consistently overestimate or underestimate monthly sales.
+The presence of both positive and negative residuals suggests that the model does not consistently over-predict or under-predict monthly sales. The observed prediction errors indicate that, while the model explains a substantial proportion of the variation in monthly sales (R-squared = 0.7924), some observations are influenced by factors that are not captured by the variables included in the regression model.
 
 ---
 
