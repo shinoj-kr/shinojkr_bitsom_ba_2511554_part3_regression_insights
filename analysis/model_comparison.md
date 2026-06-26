@@ -17,7 +17,7 @@
 
 ## Overall Comparison
 
-The multiple regression model performs better than the simple regression model because it explains a larger proportion of the variation in monthly sales. The R-squared value increased from 0.7363 in the simple regression model to 0.7924 in the multiple regression model, indicating improved explanatory power.
+The multiple regression model performs better than the simple regression model because it explains a larger proportion of the variation in monthly sales. The R-squared value increased from 0.7363 in the simple regression model to 0.7924 in the multiple regression model, indicating improved explanatory power. The adjusted R-squared value of 0.7882 is very close to the R-squared value of 0.7924, indicating that the additional independent variables improve the model without introducing substantial unnecessary complexity. This suggests that the multiple regression model is robust and provides a reliable explanation of monthly sales.
 
 Footfall remains the most influential predictor in both models. In the simple regression model, Footfall has a highly significant p-value of 4.75E-94. After accounting for additional predictors in the multiple regression model, Footfall remains highly significant with a p-value of 5.70E-96. Marketing Spend also contributes significantly to predicting monthly sales (p-value = 1.07E-15). The West (p-value = 0.0035) and South (p-value = 0.0024) regions show significantly higher monthly sales compared to the reference region (East), demonstrating that geographical location influences business performance.
 
