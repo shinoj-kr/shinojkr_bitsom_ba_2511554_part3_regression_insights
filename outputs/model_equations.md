@@ -3,7 +3,7 @@
 
 ## Why Dummy Variables Were Created
 
-The dataset contains categorical variables such as **region**, **store_type**, and **month**. Since linear regression requires numerical input variables, categorical variables cannot be used directly in the regression model.
+The dataset contains categorical variables such as region,store_type,and month. Since linear regression requires numerical input variables, categorical variables cannot be used directly in the regression model.
 
 Dummy variables were therefore created to convert categorical values into binary (0/1) variables while preserving their categorical meaning.
 
@@ -11,16 +11,16 @@ Dummy variables were therefore created to convert categorical values into binary
 
 ## Region Dummy Variables
 
-The **region** variable contains four categories:
+The region variable contains four categories:
 
 - East
 - West
 - North
 - South
 
-To avoid the **dummy variable trap** (perfect multicollinearity), one category must be used as the reference category.
+To avoid the dummy variable trap (perfect multicollinearity), one category must be used as the reference category.
 
-**Reference Category:** East
+Reference Category: East
 
 The following dummy variables were created:
 
@@ -41,14 +41,14 @@ Encoding:
 
 ## Store Type Dummy Variables
 
-The **store_type** variable contains four categories:
+The store_type variable contains four categories:
 
 - Residential
 - Airport
 - High Street
 - Mall
 
-**Reference Category:** Residential
+Reference Category: Residential
 
 The following dummy variables were created:
 
@@ -69,11 +69,11 @@ Encoding:
 
 ## Month Variable
 
-The **month** column was retained in its original **YYYY-MM** format.
+The month column was retained in its original YYYY-MM format.
 
-Although month is a categorical variable, dummy variables were **not created** because the assignment requires dummy variables for **at least one categorical variable**, and the selected regression model does not include month as an explanatory variable.
+Although month is a categorical variable, dummy variables were **not created** because the assignment requires dummy variables for at least one categorical variable , and the selected regression model does not include month as an explanatory variable.
 
-If month is included in future regression models, it should also be converted into **n−1 dummy variables** using one month as the reference category.
+If month is included in future regression models, it should also be converted into n−1 dummy variables using one month as the reference category.
 
 ---
 
@@ -83,8 +83,8 @@ One category from each categorical variable was intentionally excluded and used 
 
 This prevents perfect multicollinearity (also known as the **dummy variable trap**) and allows the regression coefficients to be interpreted relative to the reference category.
 
-- Region Reference Category: **East**
-- Store Type Reference Category: **Residential**
+- Region Reference Category: East
+- Store Type Reference Category: Residential
 
 The coefficients of the dummy variables therefore represent the expected difference compared with the corresponding reference category while holding all other variables constant.
 
