@@ -1,7 +1,7 @@
 
 # Task 3: Dummy Variable Approach
 
-## Why Dummy Variables Were Created
+## Why Dummy Variables are Created
 
 The dataset contains categorical variables such as region,store_type,and month. Since linear regression requires numerical input variables, categorical variables cannot be used directly in the regression model.
 
@@ -22,7 +22,7 @@ To avoid the dummy variable trap (perfect multicollinearity), one category must 
 
 Reference Category: East
 
-The following dummy variables were created:
+The following dummy variables are created:
 
 - Region_West
 - Region_North
@@ -50,7 +50,7 @@ The store_type variable contains four categories:
 
 Reference Category: Residential
 
-The following dummy variables were created:
+The following dummy variables are created:
 
 - Store_Airport
 - Store_HighStreet
@@ -69,19 +69,17 @@ Encoding:
 
 ## Month Variable
 
-The month column was retained in its original YYYY-MM format.
+The month column is retained in its original YYYY-MM format.
 
-Although month is a categorical variable, dummy variables were **not created** because the assignment requires dummy variables for at least one categorical variable , and the selected regression model does not include month as an explanatory variable.
-
-If month is included in future regression models, it should also be converted into n−1 dummy variables using one month as the reference category.
+Although month is a categorical variable, dummy variables are not created because the assignment requires dummy variables for at least one categorical variable , and the selected regression model does not include month as an explanatory variable.
 
 ---
 
-## Why One Category Was Omitted
+## Why One Category is Omitted
 
-One category from each categorical variable was intentionally excluded and used as the **reference category**.
+One category from each categorical variable is intentionally excluded and used as the reference category.
 
-This prevents perfect multicollinearity (also known as the **dummy variable trap**) and allows the regression coefficients to be interpreted relative to the reference category.
+This prevents perfect multicollinearity (also known as the dummy variable trap) and allows the regression coefficients to be interpreted relative to the reference category.
 
 - Region Reference Category: East
 - Store Type Reference Category: Residential
