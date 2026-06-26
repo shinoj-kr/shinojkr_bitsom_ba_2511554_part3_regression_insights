@@ -86,3 +86,110 @@ This prevents perfect multicollinearity (also known as the dummy variable trap) 
 
 The coefficients of the dummy variables therefore represent the expected difference compared with the corresponding reference category while holding all other variables constant.
 
+# Model Equations
+
+## Task 8: Regression Model Equations
+
+### 1. Simple Regression Equations
+
+#### Model 1: Marketing Spend
+
+Regression Equation:
+
+Monthly Sales = 393646.89 + (4.9423 × Marketing Spend)
+
+Explanation:
+
+For every one-unit increase in marketing spend, monthly sales are expected to increase by approximately 4.94 units. This model demonstrates a positive relationship between marketing investment and monthly sales, although its explanatory power is relatively low compared to the other models.
+
+---
+
+#### Model 2: Footfall
+
+Regression Equation:
+
+Monthly Sales = 446410.58 + (35.6780 × Footfall)
+
+Explanation:
+
+For every additional customer visiting the store, monthly sales are expected to increase by approximately 35.68 units. Among the simple regression models, Footfall provides the strongest explanation of monthly sales.
+
+---
+
+### 2. Multiple Regression Equation
+
+Regression Equation:
+
+Monthly Sales = 344215.49
+
+* (33.8789 × Footfall)
+* (1.1690 × Marketing Spend)
+* (9065.43 × Customer Rating)
+* (20182.14 × Region_West)
+* (11935.97 × Region_North)
+* (23710.75 × Region_South)
+
+This equation estimates monthly sales by considering customer traffic, marketing expenditure, customer satisfaction, and geographical location simultaneously.
+
+---
+
+### 3. Explanation of Each Coefficient
+
+| Variable        | Business Interpretation                                                                                                                                                                                        |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Intercept       | Estimated monthly sales when all numerical variables are zero and the store belongs to the reference region (East).                                                                                            |
+| Footfall        | Each additional customer is associated with an increase of approximately 33.88 units in monthly sales, assuming all other variables remain constant.                                                           |
+| Marketing Spend | Each additional unit invested in marketing is associated with an increase of approximately 1.17 units in monthly sales, holding other variables constant.                                                      |
+| Customer Rating | A one-point increase in customer rating is associated with an estimated increase of approximately 9,065.43 units in monthly sales. However, this variable is not statistically significant in the final model. |
+| Region_West     | Stores in the West region are expected to generate approximately 20,182 more monthly sales than stores in the East region.                                                                                     |
+| Region_North    | Stores in the North region are expected to generate approximately 11,936 more monthly sales than stores in the East region. However, this difference is not statistically significant.                         |
+| Region_South    | Stores in the South region are expected to generate approximately 23,711 more monthly sales than stores in the East region.                                                                                    |
+
+---
+
+### 4. Explanation of Dummy Variables
+
+The categorical variable **Region** was converted into dummy variables before fitting the multiple regression model.
+
+Three dummy variables were created:
+
+* Region_West
+* Region_North
+* Region_South
+
+Each dummy variable takes the value:
+
+* 1 if the observation belongs to that region.
+* 0 otherwise.
+
+This approach allows the regression model to measure the effect of each region on monthly sales while avoiding the dummy variable trap.
+
+---
+
+### 5. Reference Category Used
+
+The **East** region was selected as the reference category.
+
+Stores located in the East region are represented by:
+
+* Region_West = 0
+* Region_North = 0
+* Region_South = 0
+
+The coefficients for the remaining regions represent the difference in monthly sales compared with the East region.
+
+---
+
+### 6. Final Model Selected
+
+The Multiple Linear Regression model was selected as the final predictive model.
+
+---
+
+### 7. Reason for Selecting the Final Model
+
+The multiple regression model was selected because it provides the strongest predictive performance among all evaluated models. It explains approximately 79.24% of the variation in monthly sales (R-squared = 0.7924), which is higher than the simple regression models.
+
+The model combines multiple business factors, including customer footfall, marketing expenditure, customer rating, and regional differences, providing a more comprehensive explanation of monthly sales. The adjusted R-squared value of 0.7885 is close to the R-squared value, indicating that the additional variables improve the model while maintaining a good balance between model complexity and predictive performance.
+
+Overall, the multiple regression model provides the most reliable insights for business decision-making and sales prediction.
