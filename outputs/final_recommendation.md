@@ -1,4 +1,4 @@
-# Final Recommendation
+# Task 9: Final Recommendation
 
 The regression analysis identified **Footfall** as the strongest factor associated with monthly sales. It consistently demonstrated the highest explanatory power across both the simple and multiple regression models and remained highly statistically significant (p-value = 5.70E-96). Marketing Spend also showed a positive and statistically significant relationship with monthly sales (p-value = 1.07E-15), indicating that increased marketing investment contributes to higher sales. In addition, the regional dummy variables Region_West and Region_South were statistically significant, suggesting that stores operating in these regions generally achieve higher monthly sales than stores in the reference region (East).
 
